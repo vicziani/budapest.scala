@@ -1,0 +1,61 @@
+projects
+show version
+reload
+projects
+reload
+project
+projects
+reload
+projects
+reload
+projects
+reload
+projects
+frontend/
+cd frontend/
+help
+project frontend
+reload
+projects
+reload
+projects
+reload
+show version
+reload
+projects
+show backend/name
+show backend/organization
+reload
+show organization
+reload
+project
+projects
+reload
+projects
+compile
+projects
+compile
+projects
+compile
+utils/compile
+projects
+backend/compile
+projects
+show version
+projects
+update
+show quickfix:*
+show vimExecutable
+show vimEnableServer
+set vimExecutable = "mvim --servername budapest.scala"
+set vimExecutable := "mvim --servername budapest.scala"
+set vimExecutable  "mvim --servername budapest.scala"
+help
+set vimExecutable  "mvim --servername budapest.scala"
+set "vimExecutable := \"mvim --servername budapest.scala\""
+set vimExecutable in Compile := "mvim --servername budapest.scala"
+inspect vimExecutable
+set com.dscleaver.sbt.SbtQuickFix.vimExecutable in Compile := "mvim --servername budapest.scala"
+set SbtQuickFix.vimExecutable in Compile := "mvim --servername budapest.scala"
+compile
+~compile
