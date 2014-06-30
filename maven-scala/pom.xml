@@ -11,6 +11,7 @@
   <name>Jetty MainHandler</name>
  
   <properties>
+	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	  <jettyVersion>7.2.0.v20101020</jettyVersion>
 	  <scala.version>2.11.1</scala.version>
   </properties>
