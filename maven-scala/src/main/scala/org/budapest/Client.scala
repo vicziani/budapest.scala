@@ -1,7 +1,7 @@
 package org.budapest
 
 import play.api.libs.json._
-import org.apache.http.impl.client.DefaultHttpClient
+import org.apache.http.impl.client.HttpClientBuilder
 import org.apache.http.client.methods.HttpGet
 
 import org.budapest.model.Timeline
@@ -10,7 +10,7 @@ import org.budapest.serialization.json._
 class Client {
 
 	def getUrl(url: String): String = {
-		val httpClient = new DefaultHttpClient
+		val httpClient = HttpClientBuilder.create().build()
 		val httpResponse = httpClient.execute(new HttpGet(url))
 		httpResponse.setHeader("Content-Type", "text/html; charset=UTF-8")
 		val entity = httpResponse.getEntity
@@ -20,7 +20,7 @@ class Client {
 			inputStream.close
 			return input
 		} else ""
-		httpClient.getConnectionManager().shutdown()
+		httpClient.close()
 		return content
 	}
 
